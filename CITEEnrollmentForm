@@ -1,0 +1,123 @@
+import javax.swing.*;
+
+
+class EnrollmentForm{
+
+public static void main(String args[]){
+
+JFrame frame= new JFrame("Enrollment Form");
+
+
+
+JLabel enWord1;
+enWord1 = new JLabel("Welcome to CITE Online Submission Portal.");
+enWord1.setBounds(50,50, 250,30);
+frame.add(enWord1);
+
+JLabel enWord2;
+enWord2 = new JLabel("please specify the required feilds.") ;
+enWord2.setBounds(50,70, 250,30);
+frame.add(enWord2);
+
+JLabel border;
+border = new JLabel("________________________________________________________________");
+border.setBounds(50,90, 280,60);
+frame.add(border);
+
+
+JLabel firstNameLabel;
+firstNameLabel=new JLabel("First Name");
+firstNameLabel.setBounds(50,150, 200,30);
+frame.add(firstNameLabel);
+
+JTextField firstNameField;
+firstNameField = new JTextField("");
+firstNameField.setBounds(50,180, 200,30);
+frame.add(firstNameField);
+
+
+JLabel middleNameLabel;
+middleNameLabel=new JLabel("Middle Name (leave empty, if not applicable)");
+middleNameLabel.setBounds(50,230, 250,30);
+frame.add(middleNameLabel);
+
+JTextField middleNameField;
+middleNameField = new JTextField("");
+middleNameField.setBounds(50,260, 200,30);
+frame.add(middleNameField);
+
+JLabel lastNameLabel;
+lastNameLabel = new JLabel("Last Name");
+lastNameLabel.setBounds(50,310,200,30);
+frame.add(lastNameLabel);
+
+JTextField lastNameField;
+lastNameField = new JTextField("");
+lastNameField.setBounds(50,340,200,30);
+frame.add(lastNameField);
+
+JLabel suffixLabel;
+suffixLabel = new JLabel("Suffix");
+suffixLabel.setBounds(50,390,200,30);
+frame.add(suffixLabel);
+
+JTextField suffixField;
+suffixField = new JTextField("");
+suffixField.setBounds(50,420,200,30);
+frame.add(suffixField);
+
+JLabel mobileNumberLabel;
+mobileNumberLabel = new JLabel("Mobile Number");
+mobileNumberLabel.setBounds(50,470,200,30);
+frame.add(mobileNumberLabel);
+
+JTextField mobileNumberField;
+mobileNumberField = new JTextField("");
+mobileNumberField.setBounds(50,500,200,30);
+frame.add(mobileNumberField);
+
+JLabel emailAddLabel;
+emailAddLabel = new JLabel("Email Address (optional)");
+emailAddLabel.setBounds(50,550,200,30);
+frame.add(emailAddLabel);
+
+JTextField emailAddField;
+emailAddField = new JTextField("");
+emailAddField.setBounds(50,580,200,30);
+frame.add(emailAddField);
+
+JLabel enderWord1;
+enderWord1 = new JLabel("Your personal information will help us in placing your");
+enderWord1.setBounds(50,620,300,30);
+frame.add(enderWord1);
+
+JLabel enderWord2;
+enderWord2 = new JLabel("files, and in reaching you, if some problems were");
+enderWord2.setBounds(50,635,280,30);
+frame.add(enderWord2);
+
+JLabel enderWord3;
+enderWord3 = new JLabel("found.");
+enderWord3.setBounds(50,650,280,30);
+frame.add(enderWord3);
+
+
+JButton clearButton,submitButton;
+
+clearButton = new JButton("CLEAR");
+clearButton.setBounds(170,700,80,30);
+frame.add(clearButton);
+
+submitButton = new JButton("SUBMIT");
+submitButton.setBounds(280,700,80,30);
+frame.add(submitButton);
+
+
+
+frame.setSize(400,850);
+frame.setLayout(null);
+frame.setVisible(true);
+
+
+}
+}
